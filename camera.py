@@ -33,7 +33,7 @@ class Camera:
             ascii_str += "\n"
         return ascii_str
 
-    def get_ascii_camera(self, width=100):
+    def get_ascii_camera(self, width=200):
         image = self.get_image()
         gray_image = self.grayify(image)
         resized_image = self.resize_image(gray_image, new_width=width)
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     cam = Camera()
     try:
         while True:
-            ascii_frame = cam.get_ascii_camera(width=80)
+            ascii_frame = cam.get_ascii_camera()
             print(ascii_frame)
     finally:
         cam.camera.release()
