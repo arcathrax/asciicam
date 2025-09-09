@@ -6,9 +6,11 @@ from camera import Camera
 
 class AsciiCamApp(App):
     camera = Camera()
+
     BINDINGS = [
         ("q", "quit", "Quit application")
     ]
+    CSS_PATH = "asciicamera.tcss"
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -20,6 +22,8 @@ class AsciiCamApp(App):
     async def on_mount(self) -> None:
         """Called when the app starts. Sets up periodic updates."""
         self.set_interval(1/30, self.update_frame)
+        self.title = "asciicam"
+        self.sub_title = "live camera in your terminal"
 
     def compose(self) -> ComposeResult:
         """Called to add widgets to the app."""
