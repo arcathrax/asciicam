@@ -1,7 +1,4 @@
 import cv2
-import numpy as np
-import os
-import time
 
 class Camera:
     ASCII_CHARS = "@%#*+=-:. "  # Characters from dark to light
