@@ -22,8 +22,8 @@ class AsciiCamApp(App):
     async def on_mount(self) -> None:
         """Called when the app starts. Sets up periodic updates."""
         self.set_interval(1/30, self.update_frame)
-        self.title = "asciicam"
-        self.sub_title = "live camera in your terminal"
+        self.title = "ASCIICAM"
+        self.sub_title = "A camera feed in your terminal."
 
     def compose(self) -> ComposeResult:
         """Called to add widgets to the app."""
