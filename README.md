@@ -4,8 +4,6 @@ A live camera feed for your terminal.
 
 ![Screenshot of asciicam](./asciicam.png)
 
-**asciicam** is a small application, trying to bring the camera into the terminal.
-
 ## Features
 - **Live camera Feed**: Stream video from your webcam in real-time
 - **ASCII Conversion**: Converts frames to graysale ASCII art.
@@ -52,7 +50,7 @@ pip install opencv-python textual pyperclip pyinstaller
 **Generate binaries**
 Note that here the `asciicamera.tcss` also gets added to the binary.
 ```bash
-pyinstaller --onefile --hidden-import=pyperclip --add-data "asciicamera.tcss:." main.py
+pyinstaller asciicam.spec
 ```
 
 The binary is now under in the `dist` folder and called `main`.
