@@ -10,6 +10,9 @@ A live camera feed for your terminal.
 - **Terminal UI**: Built with [textual](https://textual.textualize.io/) for smooth display in the terminal.
 - **Copy to Clipboard**: Easily copy ASCII frames using [pyperclip](https://pypi.org/project/pyperclip/)
 
+## Installation
+Download the latest release [here](https://github.com/arcathrax/asciicam/releases).
+
 ## Development
 ### Set up development environment
 
